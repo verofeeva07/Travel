@@ -1,0 +1,283 @@
+/* src/App.css */
+body {
+    font-family: Times New Roman;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;  
+    background-color: rgba(255, 111, 97, 0.8);  
+    color: white;
+    position: sticky;  
+    top: 0;  
+    z-index: 1000; 
+  }
+  .Tel{
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px; 
+ 
+  }
+  header nav a {
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+    
+  }
+  
+  .hero {
+    background-image: url('/public/img/hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+ 
+  }
+  
+  .hero p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-family: Times New Roman;
+  }
+  
+  .hero button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px; 
+ 
+  }
+  
+  #about, #tours, #contact {
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #about h2{
+    font-size: 26px;
+  }
+  
+  #about img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+  }
+  #about p {
+    font-size: 22px;
+  }
+  
+  .tours-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .tour-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+  }
+  
+  .tour-card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .tour-card h3 {
+    margin: 10px 0;
+  }
+  
+  .tour-card p {
+    margin: 10px 0;
+  }
+  
+  .tour-card button {
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;  
+  }
+  .tour-card.popular {
+    border: 2px solid gold;
+
+  }
+  .popular-badge{
+    margin-right: 20px;
+    color: red;
+  }
+  
+  #testimonials {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .testimonials-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .testimonial-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    border: 2px solid #ff6f61;
+  }
+  
+  .testimonial-card h3 {
+    margin: 10px 0;
+  }
+  
+  .testimonial-card p {
+    margin: 10px 0;
+  }
+  
+  .testimonial-card .stars {
+    color: gold;
+    margin-top: 10px;
+  }
+  
+  #contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #contact input,
+  #contact textarea {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  #contact button {
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px; 
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    height: 70px;
+
+  }
+  
+  .social-links a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+  }
+
+ 
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #contact input,
+  #contact textarea {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  #contact button {
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;  
+  }
+  
+  #contact .error {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  #contact .success {
+    color: green;
+    margin-top: 10px;
+  }
+  .tour-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .modal-content img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .modal-content button {
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 20px;
+  }
